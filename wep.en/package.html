@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Resort</title>
+    <link rel="website icon" type="png"
+    href="LOGO.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/package.css">
+</head>
+<body>
+    <header class="navbar">
+        <!-- الشعار -->
+        <div class="logo">
+            <a href="home.html" class="logo-link">
+                <img src="LOGO.png" alt="Golf Resort Logo">
+            </a>
+        </div>
+
+        <!-- زر تغيير اللغة وزر تغيير الثيم -->
+        <div class="language-and-theme">
+            <!-- زر تغيير اللغة -->
+            <a href="../wep.ar/package.html" class="button language-button">AR</a>
+
+            <!-- زر تغيير الثيم -->
+            <div class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i> 
+            </div>
+        </div>
+
+        <!-- أيقونة القائمة -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+
+        <!-- قائمة الأزرار -->
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="About us.html">About us</a></li>
+                <li><a href="Hotels.html">Residence</a></li>
+                
+                <li><a href="restaurant.html">Restaurants</a></li>
+                <li><a href="Lessons.html">Digital training</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="player.html">Trainers</a></li>
+                <li><a href="PARTY.html"> Singers</a></li>
+                <li><a href="Stadium.html">Playgrounds</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- مؤقت العد التنازلي -->
+<section class="countdown-timer">
+    <div class="timer-container">
+        <h2>Special offer! Ends in</h2>
+        <div id="countdown">
+            <span id="days">5</span> Days
+            <span id="hours">0</span> hours
+            <span id="minutes">0</span> minutes
+            <span id="seconds">0</span> seconds
+        </div>
+    </div>
+</section>
+
+    <section class="packages">
+        <div class="package">
+            <img src="golf/2.png" alt="Package 1">
+            <h3>Five Rounds Package</h3>
+            <ul class="package-details">
+                <li><i class="fas fa-bed"></i> Five-night stay in a luxurious suite</li>
+                <li><i class="fas fa-golf-ball"></i> Five rounds of 18-hole golf</li>
+                <li><i class="fas fa-golf-ball"></i> Complimentary round at "Si Fou" Al-Fakhir golf course</li>
+                <li><i class="fas fa-laptop"></i> Free digital training session</li>
+            </ul>
+        </div>
+        <div class="package">
+            <img src="golf/3.png" alt="Package 2">
+            <h3>Triple Tee Package</h3>
+            <ul class="package-details">
+                <li><i class="fas fa-bed"></i> Three-night stay with breakfast</li>
+                <li><i class="fas fa-golf-ball"></i> Three rounds of 18-hole golf</li>
+                <li><i class="fas fa-golf-ball"></i> One round at "Si Fou" Al-Fakhir golf course</li>
+                <li><i class="fas fa-cart-plus"></i> Golf cart rental with a 20% discount</li>
+            </ul>
+        </div>
+        <div class="package">
+            <img src="golf/4.png" alt="Package 3">
+            <h3>Relaxation Package</h3>
+            <ul class="package-details">
+                <li><i class="fas fa-bed"></i> One-night stay with full breakfast</li>
+                <li><i class="fas fa-utensils"></i> Three-course dinner at the resort restaurant</li>
+                <li><i class="fas fa-golf-ball"></i> Golf course access</li>
+                <li><i class="fas fa-car"></i> Player transportation (fees apply for "Si Fou")</li>
+                <li><i class="fas fa-chalkboard-teacher"></i> Free training session</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="contact-footer">
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <div class="contact-details">
+                <p><i class="fas fa-phone"></i> Phone: +123 456 7890</p>
+                <p><i class="fas fa-envelope"></i> Email: info@golfresort.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Address: 123 Golf Street, Resort City</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="java/package.js"></script> 
+</body>
+</html>
