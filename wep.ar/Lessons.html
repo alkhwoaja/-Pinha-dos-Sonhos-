@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Lessons</title>
+    <link rel="website icon" type="png"
+    href="LOGO.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/lessons.css">
+</head>
+<body>
+   
+    <header class="navbar">
+        <!-- الشعار -->
+        <div class="logo">
+            <a href="home.html" class="logo-link">
+                <img src="LOGO.png" alt="Golf Resort Logo">
+            </a>
+        </div>
+    
+        <!-- زر تغيير اللغة وزر تغيير الثيم -->
+        <div class="language-and-theme">
+            <!-- زر تغيير اللغة -->
+            <a href="../wep.ar/Lessons.html" class="button language-button">EN</a>
+    
+            <!-- زر تغيير الثيم -->
+            <div class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i> 
+            </div>
+        </div>
+    
+        <!-- أيقونة القائمة -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+    
+        <!-- قائمة الأزرار -->
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="About us.html">عن المنتجع</a></li>
+                <li><a href="Hotels.html">الإقامة</a></li>
+                <li><a href="package.html">الحزم المخصصة</a></li>
+                <li><a href="restaurant.html">المطاعم</a></li>
+                
+                <li><a href="store.html">المتجر</a></li>
+                <li><a href="player.html">المدربين</a></li>
+                <li><a href="parte.html">المغنيون</a></li>
+                <li><a href="Stadium.html">الملاعب</a></li>
+                <li><a href="contact.html">التواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="video-section">
+        <h1>تدريب رقمي للغولف </h1>
+        <h2>نبذة عن التدريبنا الرقمي للغولف </h2>
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/n4aOMLSRGrI" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <footer class="contact-footer">
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <div class="contact-details">
+                <p><i class="fas fa-phone"></i> Phone: +123 456 7890</p>
+                <p><i class="fas fa-envelope"></i> Email: info@company.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Address: 123 Company Street, City</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="java/script.js"></script> 
+</body>
+</html>

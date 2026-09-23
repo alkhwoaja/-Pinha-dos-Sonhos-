@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Resort</title>
+    <link rel="website icon" type="png"
+    href="LOGO.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/package.css">
+</head>
+<header class="navbar">
+    <!-- الشعار -->
+    <div class="logo">
+        <a href="home.html" class="logo-link">
+            <img src="LOGO.png" alt="Golf Resort Logo">
+        </a>
+    </div>
+
+    <!-- زر تغيير اللغة وزر تغيير الثيم -->
+    <div class="language-and-theme">
+        <!-- زر تغيير اللغة -->
+        <a href="../wep.en/package.html" class="button language-button">EN</a>
+
+        <!-- زر تغيير الثيم -->
+        <div class="theme-toggle" onclick="toggleTheme()">
+            <i class="fas fa-moon"></i> 
+        </div>
+    </div>
+
+    <!-- أيقونة القائمة -->
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <!-- قائمة الأزرار -->
+    <nav class="nav-menu" id="nav-menu">
+        <ul>
+            <li><a href="About us.html">عن المنتجع</a></li>
+            <li><a href="Hotels.html">الإقامة</a></li>
+            <li><a href="package.html">الحزم المخصصة</a></li>
+            <li><a href="restaurant.html">المطاعم</a></li>
+            <li><a href="Lessons.html">الدروس</a></li>
+            <li><a href="store.html">المتجر</a></li>
+            <li><a href="player.html">المدربين</a></li>
+            <li><a href="parte.html">المغنيون</a></li>
+            <li><a href="Stadium.html">الملاعب</a></li>
+            <li><a href="contact.html">التواصل معنا</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- مؤقت العد التنازلي -->
+<section class="countdown-timer">
+    <div class="timer-container">
+        <h2>عرض خاص! ينتهي خلال</h2>
+        <div id="countdown">
+            <span id="days">5</span> أيام 
+            <span id="hours">0</span> ساعات 
+            <span id="minutes">0</span> دقائق 
+            <span id="seconds">0</span> ثواني
+        </div>
+    </div>
+</section>
+
+    <!-- قسم الحزم -->
+    <section class="packages">
+        <div class="package">
+            <img src="golf/2.png" alt="Package 1">
+            <h3>حزمة من خمس جولات</h3>
+            <ul class="package-details">
+                <li><i class="fas fa-bed"></i> قامة لمدة خمس ليالٍ في جناح فاخر</li>
+                <li><i class="fas fa-golf-ball"></i> خمس جولات من لعبة الجولف المكونة من 18 حفرة</li>
+                <li><i class="fas fa-golf-ball"></i> جولة مجانية في ملعب جولف "سي فو" الفاخر  </li>
+                <li><i class="fas fa-laptop"></i> جلسة تدريبية رقمية مجانية</li>
+                <div class="language-and-theme">
+                    <!-- زر تغيير اللغة -->
+                    <a href="../wep.en/contact.html" class="button language-button">احجز الان </a>
+            </ul>
+        </div>
+        <div class="package">
+            <img src="golf/3.png" alt="Package 2">
+            <h3>حزمة الثلاثة جولات</h3>
+            <ul class="package-details">
+                <li><i class="fas fa-bed"></i>إقامة لمدة ثلاث ليالٍ مع وجبة الإفطار </li>
+                <li><i class="fas fa-golf-ball"></i> ثلاث جولات من لعبة الجولف المكونة من 18 حفرة </li>
+                <li><i class="fas fa-golf-ball"></i>جولة واحدة في ملعب جولف "سي فو" الفاخر</li>
+                <li><i class="fas fa-cart-plus"></i> تأجير عربات الجولف بخصم 20%</li>
+                <div class="language-and-theme">
+                    <!-- زر تغيير اللغة -->
+                    <a href="../wep.en/contact.html" class="button language-button">احجز الان </a>
+            </ul>
+        </div>
+        <div class="package">
+            <img src="golf/4.png" alt="Package 3">
+            <h3>حزمة الاستجمام</h3>
+            <ul class="package-details">
+                <li><i class="fas fa-bed"></i> إقامة ليلة واحدة مع وجبة إفطار كاملة</li>
+                <li><i class="fas fa-utensils"></i> عشاء مكون من ثلاثة أطباق في مطعم المنتجع</li>
+                <li><i class="fas fa-golf-ball"></i> الوصول إلى ملعب الجولف</li>
+                <li><i class="fas fa-car"></i> نقل اللاعب (يتم تطبيق الرسوم على "Si Fou")</li>
+                <li><i class="fas fa-chalkboard-teacher"></i> جلسة تدريب مجانا</li>
+                <div class="language-and-theme">
+                    <!-- زر تغيير اللغة -->
+                    <a href="../wep.en/contact.html" class="button language-button">احجز الان </a>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="contact-footer">
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <div class="contact-details">
+                <p><i class="fas fa-phone"></i> Phone: +123 456 7890</p>
+                <p><i class="fas fa-envelope"></i> Email: info@golfresort.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Address: 123 Golf Street, Resort City</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="java/package.js"></script> 
+</body>
+</html>

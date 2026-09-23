@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Resort</title>
+    <link rel="website icon" type="png"
+    href="LOGO.png">
+   
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/home.css"> 
+</head>
+<body>
+
+    <!-- شريط التنقل -->
+    <header class="navbar">
+        <!-- الشعار -->
+        <div class="logo">
+            <a href="home.html" class="logo-link">
+                <img src="LOGO.png" alt="Golf Resort Logo">
+            </a>
+        </div>
+
+        <!-- زر تغيير اللغة وزر تغيير الثيم -->
+        <div class="language-and-theme">
+            <!-- زر تغيير اللغة -->
+            <a href="../wep.en/home.html" class="button language-button">EN</a>
+          
+        
+
+            <!-- زر تغيير الثيم -->
+            <div class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i> 
+            </div>
+        </div>
+
+        <!-- أيقونة القائمة -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+
+        <!-- قائمة الأزرار -->
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="About us.html">عن المنتجع</a></li>
+                <li><a href="Hotels.html">الإقامة</a></li>
+                <li><a href="package.html">الحزم المخصصة</a></li>
+                <li><a href="restaurant.html">المطاعم</a></li>
+                <li><a href="Lessons.html">الدروس</a></li>
+                <li><a href="store.html">المتجر</a></li>
+                <li><a href="player.html">المدربين</a></li>
+                <li><a href="parte.html">المغنيون</a></li>
+                <li><a href="Stadium.html">الملاعب</a></li>
+                <li><a href="contact.html">التواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- باقي الصفحة -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>مرحباً بكم في منتجعنا للغولف</h1>
+            <p class="highlight">حيث تلتقي الفخامة و الطبيعة</p>
+            <p>
+              يقع منتجعنا للغولف في قلب الطبيعة، ويوفر تجربة لا مثيل لها لعشاق الغولف 
+              والباحثين عن الترفيه على حد سواء. مع ملاعب الغولف ذات المستوى العالمي التي صممها مهندسون معماريون مشهورون، والإقامة الفاخرة،
+               وخيارات تناول الطعام الاستثنائية، فإننا نقدم الملاذ المثالي للاسترخاء والاستجمام.
+            </p>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <!-- إضافة رابط موقع Quinta do Lago Golf Resort -->
+                <a href="https://maps.app.goo.gl/NCrSGpA5MEaoBZpC8" class="social-icon" target="_blank">
+                    <i class="fas fa-map-marker-alt"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-box">
+            <i class="fas fa-golf-ball"></i>
+            <h3>جولف من الطراز العالمي</h3>
+            <p>استمتع بملاعب الجولف المتميزة لدينا والتي صممها أفضل المهندسين المعماريين.</p>
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-hotel"></i>
+            <h3>الفنادق الفاخرة</h3>
+            <p>قم بالإقامة في فنادقنا الفاخرة ذات الإطلالات الخلابة ووسائل الراحة المتميزة.</p>
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-utensils"></i>
+            <h3>المطاعم الراقية</h3>
+            <p>استمتع بالأطباق الرائعة التي أعدها طهاتنا الحائزون على جوائز.</p>
+        </div>
+    </section>
+
+    <script src="java/script.js"></script>
+</body>
+</html>

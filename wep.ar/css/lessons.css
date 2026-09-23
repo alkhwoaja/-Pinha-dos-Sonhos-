@@ -1,0 +1,241 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #b9f39e, #13330f, #3b8353);
+    color: white;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(15px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em;
+    z-index: 1000;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* أزرار اللغة والثيم على اليسار */
+.language-and-theme {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-right: auto; /* يدفعها إلى اليسار */
+    margin-left: 20px; /* مسافة صغيرة من الحافة اليسرى */
+}
+
+/* الشعار في المنتصف */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo img {
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+/* زر القائمة والقائمة على اليمين */
+.menu-toggle {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 100px; /* يبقى على اليمين */
+}
+
+.nav-menu {
+    display: none; /* يخفي القائمة حتى يتم تفعيلها */
+    position: absolute; /* تحديد الموقع بدقة */
+    top: 70px; /* أسفل شريط التنقل */
+    right: 20px; /* محاذاة من اليسار */
+    background: rgba(0, 0, 0, 0.8); /* خلفية شفافة سوداء */
+    padding: 1.5em; /* حشوة داخلية */
+    border-radius: 10px; /* زوايا دائرية */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* ظل للعمق */
+    width: 250px; /* عرض القائمة */
+}
+
+/* إظهار القائمة عند التفعيل */
+/* يجعل القائمة مرئية عند النقر على أيقونة القائمة */
+.nav-menu.active {
+    display: block; /* إظهار القائمة */
+}
+
+/* تنسيق قائمة العناصر */
+/* يزيل التنسيق الافتراضي للقائمة */
+.nav-menu ul {
+    list-style: none; /* إزالة النقاط */
+}
+
+/* تنسيق عناصر القائمة */
+/* يضيف مسافة بين العناصر */
+.nav-menu ul li {
+    margin-bottom: 1em; /* مسافة بين الأزرار */
+}
+.nav-menu ul li a {
+    color: white; /* لون النص */
+    text-decoration: none; /* إزالة الخط تحت النص */
+    font-size: 1rem; /* حجم النص */
+    font-weight: bold; /* نص غامق */
+    padding: 0.8em 1.5em; /* حشوة داخلية */
+    border-radius: 2em; /* زوايا دائرية */
+    background: rgba(255, 255, 255, 0.1); /* خلفية شفافة */
+    transition: all 0.3s ease; /* تأثير تغيير سلس */
+    display: block; /* يجعل الرابط يملأ العنصر */
+}
+
+.nav-menu ul li a:hover {
+    background: #f1c40faf; /* خلفية صفراء عند التمرير */
+    color: black; /* تغيير لون النص */
+    transform: scale(1.05); /* تكبير الرابط قليلاً */
+}
+
+/* حذف theme-toggle-container لأنه غير ضروري */
+.theme-toggle {
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.5s ease;
+}
+
+.theme-toggle:hover {
+    background: rgba(241, 196, 15, 0.4);
+    transform: scale(1.1);
+}
+
+.video-section {
+    text-align: center;
+    padding: 100px 20px 60px;
+}
+
+.video-section h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.contact-footer {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #f1c40f;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-details p {
+    margin: 0;
+    font-size: 16px;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+}
+
+.contact-details i {
+    margin-right: 8px;
+    color: #f1c40f;
+}
+body.dark-mode {
+    background: #121212;
+    color: #ddd;
+}
+
+body.dark-mode .navbar {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+body.dark-mode .logo {
+    color: #f1c40f;
+}
+
+body.dark-mode .package {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .contact-footer {
+    background: rgba(0, 0, 0, 0.8);
+}
+.language-and-theme {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.language-button {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 2em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.language-button:hover {
+    background: rgba(241, 196, 15, 0.6);
+    color: black;
+}

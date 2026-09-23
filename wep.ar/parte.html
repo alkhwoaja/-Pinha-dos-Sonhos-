@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حفلات النادي</title>
+    <link rel="website icon" type="png"
+    href="LOGO.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/parte.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <header class="navbar">
+        <!-- الشعار -->
+        <div class="logo">
+            <a href="home.html" class="logo-link">
+                <img src="LOGO.png" alt="Golf Resort Logo">
+            </a>
+        </div>
+
+        <!-- زر تغيير اللغة وزر تغيير الثيم -->
+        <div class="language-and-theme">
+            <!-- زر تغيير اللغة -->
+            <a href="../wep.en/PARTY.html" class="button language-button">EN</a>
+
+            <!-- زر تغيير الثيم -->
+            <div class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i> 
+            </div>
+        </div>
+
+        <!-- أيقونة القائمة -->
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+
+        <!-- قائمة الأزرار -->
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="About us.html">عن المنتجع</a></li>
+                <li><a href="Hotels.html">الإقامة</a></li>
+                <li><a href="package.html">الحزم المخصصة</a></li>
+                <li><a href="restaurant.html">المطاعم</a></li>
+                <li><a href="Lessons.html">الدروس</a></li>
+                <li><a href="store.html">المتجر</a></li>
+                <li><a href="player.html">المدربين</a></li>
+                <li><a href="parte.html">المغنيون</a></li>
+                <li><a href="Stadium.html">الملاعب</a></li>
+                <li><a href="contact.html">التواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- قسم المغنين -->
+    <section class="players">
+        <h1>المغنون</h1>
+        <div class="players-grid">
+            <div class="player">
+                <img src="party/Adele.jpg" alt="Adele">
+                <h3>Adele</h3>
+                <h4>أيام الحفلات</h4>
+                <div class="schedule">
+                    <table class="month-table" id="adele-table">
+                        <thead>
+                            <tr>
+                                <th>الأحد</th>
+                                <th>الإثنين</th>
+                                <th>الثلاثاء</th>
+                                <th>الأربعاء</th>
+                                <th>الخميس</th>
+                                <th>الجمعة</th>
+                                <th>السبت</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td class="highlight">2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                            <tr><td>8</td><td>9</td><td>10</td><td class="highlight">11</td><td>12</td><td>13</td><td>14</td></tr>
+                            <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td class="highlight">20</td><td>21</td></tr>
+                            <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td class="highlight">28</td></tr>
+                            <tr><td>29</td><td>30</td><td>31</td><td></td><td></td><td></td><td></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="player">
+                <img src="party/Dua Lipa.jpg" alt="Dua Lipa">
+                <h3>Dua Lipa</h3>
+                <h4>أيام الحفلات</h4>
+                <div class="schedule">
+                    <table class="month-table" id="dua-table">
+                        <thead>
+                            <tr>
+                                <th>الأحد</th>
+                                <th>الإثنين</th>
+                                <th>الثلاثاء</th>
+                                <th>الأربعاء</th>
+                                <th>الخميس</th>
+                                <th>الجمعة</th>
+                                <th>السبت</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td class="highlight">5</td><td>6</td><td>7</td></tr>
+                            <tr><td>8</td><td class="highlight">9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+                            <tr><td>15</td><td>16</td><td class="highlight">17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+                            <tr><td>22</td><td>23</td><td>24</td><td class="highlight">25</td><td>26</td><td>27</td><td>28</td></tr>
+                            <tr><td>29</td><td>30</td><td>31</td><td></td><td></td><td></td><td></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="player">
+                <img src="party/George Ezra.jpg" alt="George Ezra">
+                <h3>George Ezra</h3>
+                <h4>أيام الحفلات</h4>
+                <div class="schedule">
+                    <table class="month-table" id="george-table">
+                        <thead>
+                            <tr>
+                                <th>الأحد</th>
+                                <th>الإثنين</th>
+                                <th>الثلاثاء</th>
+                                <th>الأربعاء</th>
+                                <th>الخميس</th>
+                                <th>الجمعة</th>
+                                <th>السبت</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td class="highlight">1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                            <tr><td>8</td><td>9</td><td>10</td><td>11</td><td class="highlight">12</td><td>13</td><td>14</td></tr>
+                            <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td class="highlight">21</td></tr>
+                            <tr><td>22</td><td class="highlight">23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+                            <tr><td>29</td><td>30</td><td>31</td><td></td><td></td><td></td><td></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="java/parti.js"></script>
+</body>
+</html>
